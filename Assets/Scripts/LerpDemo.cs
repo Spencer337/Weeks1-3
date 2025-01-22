@@ -19,6 +19,12 @@ public class LerpDemo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        t += Time.deltaTime;
+
+        if (t > 1)
+        {
+            t = 0;
+        }
         // Vector2 pos = new Vector2(Mathf.Lerp(-4, 5, t), 0);
         transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
     }
