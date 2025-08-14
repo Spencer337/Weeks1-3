@@ -10,11 +10,6 @@ public class LerpDemo : MonoBehaviour
     public Transform start;
     public Transform end;
     public AnimationCurve curve;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

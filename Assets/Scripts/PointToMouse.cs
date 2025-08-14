@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class PointToMouse : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
